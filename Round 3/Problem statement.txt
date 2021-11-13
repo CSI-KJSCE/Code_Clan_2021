@@ -1,0 +1,10 @@
+Given an integer array nums, move all 4's to its end while maintaining the relative order of the non-four elements.
+Input: [4,1,4,3,12]
+Output: [1,3,12,4,4]
+
+Input: nums = [4]
+Output: [4]
+
+Constrains:
+1 <= nums.length <= 104 
+-231 <= nums[i] <= 231 - 1

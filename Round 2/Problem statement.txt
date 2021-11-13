@@ -1,0 +1,13 @@
+Given a string, perform the following tasks:
+Print the number of vowels present in the string
+Replace those vowels with the string “3”. Print the resulting string.
+We will only consider the following letters as vowels: a, i, o, u
+
+Input: “Hello, world!”
+Output: 
+2
+“Hell3, w3rld!”
+
+Constraints:
+1 <= length of string <= 200
+
