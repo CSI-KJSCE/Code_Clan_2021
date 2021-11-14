@@ -1,0 +1,18 @@
+CSI organized a competitive offline hands-on event at college for Abhiyantriki event. At the end of each session, participants were given 
+tasks to check their understanding and fun. For simplicity of participants, they were free to 
+complete the task alone or they can form a group with any number of people they want.
+
+Consider the sitting arrangements to be in the form of matrix MxN . Each group member is denoted as 1 and the places/spaces which
+remain unoccupied are marked as 0. For fair results, No two groups are adjacent, meaning participant in one group is not four-directionally adjacent to another participant in a different group.
+
+Since there are a lot of participants, it would be easy if the CSI members knew the locations [co-ordinates] of each group.
+Find the coordinates of the top left and bottom right member of each group. A group  with a top left member at (r1, c1) and a bottom right member at (r2, c2) is represented by the 4-length array [r1, c1, r2, c2].
+
+Return a 2D array containing the 4-length arrays described above for each group of participants. If there are no groups , return an empty array. You may return the answer in any order.
+
+Input: sitting arrangement = [[1,0,0],[0,1,1],[0,1,1]]
+Output: [[0,0,0,0],[1,1,2,2]]
+Explanation:
+The first group has a top left corner at matrix[0][0] and a bottom right corner at matrix[0][0].
+The second group has a top left corner at matrix[1][1] and a bottom right corner at matrix[2][2].
+
