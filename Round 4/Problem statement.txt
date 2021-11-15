@@ -17,4 +17,4 @@ The first group has a top left corner at matrix[0][0] and a bottom right corner 
 The second group has a top left corner at matrix[1][1] and a bottom right corner at matrix[2][2].
 
 
-
+In case there are no groups, you are supposed to return -1

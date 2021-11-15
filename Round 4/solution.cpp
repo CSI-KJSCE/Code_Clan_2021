@@ -46,6 +46,9 @@ int main(){
     }
 
     vector<vector<int>> result = findSittingArrangements(sitting_arrangement);
+    if(result.size()==0){
+        cout<<"-1"<<endl;
+    }
     for(int i=0;i<result.size();i++){
         for(int j=0;j<result[i].size();j++){
             cout<<result[i][j]<<" ";
