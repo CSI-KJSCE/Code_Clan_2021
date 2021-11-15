@@ -2,7 +2,8 @@
 using namespace std; 
 
 int main(){
-    
+    fstream my_file;
+	my_file.open("output04.txt", ios::out);
     int T;
     cin >>T;
 
@@ -27,7 +28,9 @@ int main(){
         else
         day=x*(pmk);
         cout<<day+c<<endl;
+        my_file << day+c<<"\n";
 
     }
+    my_file.close();
     return 0;
 }
