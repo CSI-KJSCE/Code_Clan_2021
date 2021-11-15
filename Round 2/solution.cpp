@@ -2,33 +2,38 @@
 using namespace std; 
 // O(N)
 
+bool subString(string b,string a){
+    if(b.length() ==0){
+        return true;
+    }
 
-bool isVowel(char ch)
-{
-    ch = toupper(ch);
-    return (ch=='A' || ch=='E' || ch=='I' ||
-                       ch=='O' || ch=='U');
-}
+    if(b.length() > a.length()){
+        return false;
+    }
 
-void solve(string input){
+    int counter = 0; // pointing s2
 
-    int count =0;
-    vector<char> result; // Final answer
-
-    for(int i=0;i<input.length();i++){
-        if (isVowel(input[i])){
-            count++;
-            result.push_back('3');
-        }else{
-            result.push_back(input[i]);
+    int i=0;
+    for(i=0;i<a.length();i++)
+    {
+        if(counter==b.length())
+            break;
+        if(b[counter]==a[i])
+        {
+            counter++;
+        }
+      else
+        {
+            // Special case where character preceding the i'th character is duplicate
+            if(counter > 0)
+            {
+                i -= counter;
+            }
+            counter = 0;
         }
     }
+    return counter < b.length()?false:true;
 
-    cout <<count<<endl;
-    for(auto i : result){
-        cout<<i;
-    }
-    cout<<endl;
 }
 
 int main(){
@@ -36,10 +41,18 @@ int main(){
     cin >>T;
 
     while(T--){
-        string inp;
-        cin >>inp;
+        string a ;
+        cin >>a;
 
-        solve(inp);
+        string b;
+        cin >>b;
+
+        if(subString(b,a)){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
     }
     return 0;
 }

@@ -1,0 +1,32 @@
+Alice is trying to find the perfect color for her new painting. So she has N colors numbered from 0 to N−1 that she can mix and she doesn't know which one of the N colors will work but we do know it.
+
+Now Alice has worked on multiple search algorithms to optimize search. For this project, she uses a modulo-based search algorithm that she invented herself. So first she chooses an integer K and selects all indices i in increasing order such that i mod K=0 and test the colors on such indices, then all indices i in increasing order such that i mod K=1, and test the colors on such indices, and so on.
+
+Given N, the index of the color p that will work, and K, find after how much time will she be able to complete her painting assuming that testing 1 color takes 1 day.
+
+For example, consider N=5,p=2, and K=3.
+
+On the 1st day, Alice tests color numbered 0 because 0 mod 3=0.
+On the 2nd day, Alice tests color numbered 3 because 3 mod 3=0.
+On the 3rd day, Alice tests color numbered 1 because 1 mod 3=1.
+On the 4th day, Alice tests color numbered 4 because 4 mod 3=1.
+On the 5th day, Alice tests color numbered 2 because 2 mod 3=2.
+So after 5 days, Alice will be able to complete her new painting.
+ 
+Constraints:
+1 <= T <= 105
+1 <= N,K <= 109
+0 <= p < N
+
+Input:
+4
+10 5 5
+10 6 5
+10 4 5
+10 8 5
+
+Output:
+2
+4
+9
+8

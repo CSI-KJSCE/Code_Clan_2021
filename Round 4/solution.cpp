@@ -29,6 +29,28 @@ vector<vector<int>> findSittingArrangements(vector<vector<int>>& sittings) {
 }
 
 int main(){
-    
+    vector<vector<int>> sitting_arrangement;
+    int M,N;
+    cin >>M>>N;
+    vector<int> vect;
+    for(int i=0;i<M;i++){
+        vect.clear();
+        for(int j=0;j<N;j++){
+            int a;
+            cin >>a;
+
+            vect.push_back(a);
+
+        }
+        sitting_arrangement.push_back(vect);
+    }
+
+    vector<vector<int>> result = findSittingArrangements(sitting_arrangement);
+    for(int i=0;i<result.size();i++){
+        for(int j=0;j<result[i].size();j++){
+            cout<<result[i][j]<<" ";
+        }
+        cout<<endl;
+    }
     return 0;
 }

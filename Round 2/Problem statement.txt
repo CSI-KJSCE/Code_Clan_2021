@@ -1,13 +1,17 @@
-Given a string, perform the following tasks:
-Print the number of vowels present in the string
-Replace those vowels with the string “3”. Print the resulting string.
-We will only consider the following letters as vowels: a, i, o, u
+Given two strings, check whether the first string  is the substring of second string.
+Return 'YES' if first string is substring of another or else return 'NO'
 
-Input: “Hello, world!”
-Output: 
-2
-“Hell3, w3rld!”
+Inputs :
+string a = 'ComputerScienceofIndia'
+string b = 'Science'
 
-Constraints:
-1 <= length of string <= 200
+Output : 'YES'
+
+string a = 'WebDevelopment'
+string b = 'for'
+
+Output : 'NO'
+
+
+
 
