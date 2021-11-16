@@ -12,7 +12,7 @@ void solve(int N, int arr[]){
     // Considering three most probable cases
     // Case 1 : [1,2,3,4,5]
     int case1 = arr[0]*arr[1]*arr[2];
-
+    cout<<case1<<endl;
     // Case 2 : [-1,-2,-3,-4,-5]
     int case2 = arr[N-1]*arr[N-2]*arr[N-3];
 
